@@ -1,0 +1,8 @@
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #70259B;
+    padding: 0 80px 0 80px;
+}

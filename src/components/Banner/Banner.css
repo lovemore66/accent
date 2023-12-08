@@ -1,0 +1,19 @@
+.banner {
+    /* height: 800px; */
+    overflow: hidden;
+    /* background-image: url('../../assets/images/confidence.jpeg') */
+}
+
+.content {
+     height: 100%;
+    width: 100%;
+    padding: 80px;
+    /* position: absolute;
+    z-index: 1;
+    top: 4; */
+}
+.banner img {
+    height: 100%;
+    /* margin-top: -145px; */
+    /* margin-bottom: 145px; */
+}
