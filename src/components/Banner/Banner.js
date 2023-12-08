@@ -1,15 +1,20 @@
 import React from 'react';
 import './Banner.css';
-import confidence from '../../assets/images/confidence.jpeg';
 
-const Banner = ({ text, buttonText, onClick }) => {
+const Banner = ({ title, text, buttonText, onClick, backgroundImage }) => {
+    const bannerContenStyle = {
+        backgroundImage: `url(${backgroundImage})`,
+      };
+
     return (
         <div className="banner">
-            <img src={confidence} alt="Confidence" />
-            {/* <div className='content'>
-                <p>{text}</p>
-                <button onClick={onClick}>{buttonText}</button>
-            </div> */}
+            <div className='banner-content' style={bannerContenStyle}>
+            <section className="banner-section">
+                    <h4>{title}</h4>
+                    <p>{text}</p>
+                    <button onClick={onClick}>{buttonText}</button>
+                </section>
+            </div>
         </div>
     );
 };

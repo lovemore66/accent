@@ -7,10 +7,14 @@ import Footer from './components/Footer/Footer';
 import { fetchData } from './utils/api';
 import Card from './components/Card/Card';
 import Blog from './components/Blog/Blog';
-import uxIcon from './assets/icons/ux.svg'
+import uxIcon from './assets/icons/ux.svg';
 import webIcon from './assets/icons/web.svg';
 import appIcon from './assets/icons/app.svg';
 import blockchainIcon from './assets/icons/blockchain.svg';
+import dragon from './assets/images/dragon.jpeg';
+import olympian from './assets/images/olympian.jpeg';
+import skhokho from './assets/images/skhokho.jpeg';
+import confidence from './assets/images/confidence.jpeg';
 import './App.css';
 const App = () => {
   const [data, setData] = useState([]);
@@ -34,7 +38,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <Banner text="Welcome to the website!" buttonText="Click Me" onClick={handleClick} />
+      <Banner title="Live with Confidence" text="José Mourinho brings confidence to pan-African Sanlam campaign." buttonText="View project" onClick={handleClick} backgroundImage={confidence}/>
       <div className='cards'>
         <Card
           smallImage={webIcon}
@@ -62,9 +66,27 @@ const App = () => {
         />
       </div>
       <div className='case-studies'>
-        <Blog />
-        <Blog />
-        <Blog />
+        <div className='blog'>
+          <Blog
+            heading="Your heading"
+            paragraph="Your paragraph text"
+            backgroundImage={olympian}
+          />
+        </div>
+        <div className='blog'>
+          <Blog
+            heading="Your heading"
+            paragraph="Your paragraph text"
+            backgroundImage={dragon}
+          />
+        </div>
+        <div className='blog'>
+          <Blog
+            heading="Your heading"
+            paragraph="Your paragraph text"
+            backgroundImage={skhokho}
+          />
+        </div>
       </div>
       <Logos logoData={logoData} />
       <Footer />

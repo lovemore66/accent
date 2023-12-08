@@ -6,3 +6,10 @@
     background-color: #70259B;
     padding: 0 80px 0 80px;
 }
+
+.head ul {
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+    gap: 24px;
+}

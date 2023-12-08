@@ -1,10 +1,19 @@
 import React from 'react';
-import './Blog.css'
+import './Blog.css';
 
-const Blog = ({ paragraph }) => {
+const Blog = ({ heading, paragraph, backgroundImage }) => {
+  const contentStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+  };
+
   return (
-    <div className="blog">
-      <p>{paragraph}</p>
+    <div className="container">
+      <div className='content' style={contentStyle}>
+        <secttion className="content-section">
+        <h4>{heading}</h4>
+        <p>{paragraph}</p>
+        </secttion>
+      </div>
     </div>
   );
 };

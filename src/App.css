@@ -9,7 +9,11 @@
 .case-studies {
   display: flex;
   gap: 41px;
-  padding: 0px 80px 0 80px;
+  padding: 0px 80px;
+}
+
+.blog {
+  flex: 1;
 }
 @keyframes App-logo-spin {
   from {
