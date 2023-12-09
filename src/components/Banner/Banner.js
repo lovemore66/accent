@@ -1,18 +1,15 @@
 import React from 'react';
 import './Banner.css';
 
-const Banner = ({ title, text, buttonText, onClick, backgroundImage }) => {
-    const bannerContenStyle = {
-        backgroundImage: `url(${backgroundImage})`,
-      };
-
+const Banner = ({ title, text, children, bannerImage}) => {
     return (
         <div className="banner">
-            <div className='banner-content' style={bannerContenStyle}>
-            <section className="banner-section">
-                    <h4>{title}</h4>
+            <div className='banner-content'>
+                <img src={bannerImage} />
+                <section className="banner-section">
+                    <h1>{title}</h1>
                     <p>{text}</p>
-                    <button onClick={onClick}>{buttonText}</button>
+                    <div className='btn'>{children}</div>
                 </section>
             </div>
         </div>

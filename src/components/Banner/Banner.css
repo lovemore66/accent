@@ -1,28 +1,83 @@
-.banner {
-  height: 75vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  overflow: hidden;
-}
-
 .banner-content {
-  background-size: auto;
-  background-position: center bottom -235px;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+  max-height: 600px;
   text-align: center;
-  box-sizing: border-box;
+  background-color: black;
   position: relative;
 }
-
+.banner-content img {
+  max-height: 600px;
+  margin: 0 auto;
+}
 .banner-section {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 80px;
-    box-sizing: border-box;
-    padding-bottom: 80px;
-    color: #ffffff;
+  max-width: 700px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 80px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.banner-section h1 {
+  font-size: 48px;
+  color: #fff;
+}
+.banner-section p {
+  margin-top: 28px;
+  font-size: 20px;
+  color: #ffff;
+}
+.banner-section button {
+  margin-top: 47px;
+}
+.banner-section .btn {
+  width: 127px;
+}
+
+/* mobile devices */
+@media only screen and (max-width: 600px) {
+  .banner-content {
+    max-height: 300px;
+    text-align: center;
+    background-color: black;
+    overflow: hidden;
+  }
+  .banner-content img {
+    max-height: 300px;
+    margin: 0 auto;
+  }
+  .banner-section {
+    padding: 30px;
+  }
+  .banner-section h1 {
+    font-size: 28px;
+  }
+  .banner-section p {
+    margin-top: 18px;
+  }
+  .banner-section button {
+    margin-top: 27px;
+  }
+}
+
+/* iPad */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .banner-content {
+    max-height: 500px;
+    text-align: center;
+    background-color: black;
+    position: relative;
+    width: 100%;
+  }
+  .banner-content img {
+    max-height: 500px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .banner-section {
+    padding: 40px;
+  }
+  .banner-section h1 {
+    font-size: 28px;
+  }
 }

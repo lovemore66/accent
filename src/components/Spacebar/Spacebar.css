@@ -1,0 +1,38 @@
+/* Primary Class Styles */
+.primary section {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+}
+.primary section h5 {
+  font-size: 24px;
+}
+.primary section h3,
+.primary section p {
+  display: none;
+}
+/* Secondary Class Styles */
+.secondary section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.secondary section h5 {
+  display: none;
+  width: 40px;
+  height: 4px;
+}
+.secondary section h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.secondary section img {
+  width: 40px;
+  height: 4px;
+}
+.secondary section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}

@@ -1,15 +1,87 @@
 .head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    background-color: #70259B;
-    padding: 0 80px 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #70259b;
+  padding: 0 80px 0 100px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.head ul {
+  display: flex;
+  list-style: none;
+  color: #ffffff;
+  gap: 32px;
+}
+.head li {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  cursor: pointer;
+}
+.btn {
+  align-items: center;
+}
+.btn img {
+  display: none;
+  height: 50px;
+  cursor: pointer;
+}
+.hide-menu {
+  display: none;
+}
+main {
+  position: relative;
+  height: 80px;
 }
 
-.head ul {
-    display: flex;
-    list-style: none;
-    color: #ffffff;
-    gap: 24px;
+/* mobile devices */
+@media only screen and (max-width: 600px) {
+  .btn img {
+    display: block;
+    height: 50px;
+    cursor: pointer;
+  }
+  .head ul,
+  .btn-child {
+    display: none;
+  }
+  .head {
+    padding: 0 30px 0 30px;
+  }
+}
+
+#logo {
+  cursor: pointer;
+}
+
+/* iPad */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .btn img {
+    display: block;
+    height: 50px;
+    cursor: pointer;
+  }
+  .head ul,
+  .btn-child {
+    display: none;
+  }
+}
+
+/* laptops */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .mobile {
+    display: none;
+  }
+}
+
+/* large monitors */
+@media only screen and (min-width: 1441px) {
+  body {
+    font-size: 20px;
+  }
+  .mobile {
+    display: none;
+  }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './card.css';
 const Card = ({ smallImage, header, paragraph }) => {
   return (
     <div className="card">

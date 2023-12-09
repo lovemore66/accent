@@ -1,25 +1,74 @@
-
 .cards {
   display: flex;
   justify-content: space-between;
-  padding: 80px;
+  padding: 54px 80px 80px 80px;
   gap: 53px;
 }
-
 .case-studies {
   display: flex;
   gap: 41px;
   padding: 0px 80px;
 }
-
 .blog {
   flex: 1;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.first-heading {
+  padding: 80px 80px 0px 80px;
+}
+.first-heading h1 {
+  margin-top: 46px;
+  font-size: 48px;
+}
+.second-heading {
+  padding: 0px 80px 57px 80px;
+}
+.brands-heading {
+  padding: 80px 80px 0px 80px;
+}
+.brands-heading h1 {
+  margin-top: 29px;
+  font-size: 48px;
+}
+
+/* mobile devices */
+@media only screen and (max-width: 600px) {
+  .cards,
+  .case-studies {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .cards {
+    padding: 46px 30px 30px 30px;
+  }
+  .first-heading {
+    padding: 50px 30px 0px 30px;
+  }
+  .first-heading h1 {
+    margin-top: 26px;
+  }
+  .second-heading {
+    padding: 0px 30px 36px 30px;
+  }
+  .case-studies {
+    padding: 0px 30px;
+  }
+  .brands-heading {
+    padding: 46px 30px 0px 30px;
+  }
+}
+
+/* iPad */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .cards,
+  .case-studies {
+    flex-wrap: wrap;
+  }
+  .first-heading {
+    padding: 50px 50px 0px 50px;
+  }
+  .second-heading {
+    padding: 0px 50px 57px 50px;
+  }
+  .case-studies {
+    padding: 0px 50px;
   }
 }

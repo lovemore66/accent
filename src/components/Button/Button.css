@@ -1,0 +1,25 @@
+.button-container button {
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+.primary button {
+  background-color: #70259b;
+  transition: background-color 0.3s ease-in-out;
+  color: #fff;
+}
+.primary button:hover {
+  background-color: #460073;;
+}
+.secondary button {
+  background: #fff;
+  color: #70259b;
+}
+

@@ -1,0 +1,30 @@
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #70259b;
+  min-width: 200px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 80px;
+}
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #ffffff;
+  gap: 0;
+}
+.mobile-nav li {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  margin: 0;
+}
+.mobile-nav li {
+  border-top: 1px solid #ccc;
+}

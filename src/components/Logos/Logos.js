@@ -1,5 +1,5 @@
 import React from 'react';
-import './Logos.css'
+import './Logos.css';
 
 const Logos = ({ logoData }) => {
   return (

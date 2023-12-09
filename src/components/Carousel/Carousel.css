@@ -1,0 +1,79 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  flex: 0 0 32%;
+  box-sizing: border-box;
+  margin-right: 2.33%;
+}
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+.carousel-item h3 {
+  margin: 10px 0;
+}
+.nav-btns {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  padding: 0px 50px 0px 50px;
+  box-sizing: border-box;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-btns button {
+  padding: 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(112, 37, 155, 0.4);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.carousel-container:hover .nav-btns {
+  display: flex;
+}
+.nav-btns button:hover {
+  background-color: rgba(112, 37, 155, 0.7);
+}
+.nav-btns img {
+  height: 20px;
+  width: 20px;
+}
+
+/* mobile devices */
+@media only screen and (max-width: 600px) {
+  .carousel-item {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    margin-right: 2%;
+  }
+  .carousel-item img {
+    width: 10%;
+    height: auto;
+  }
+}
+
+/* iPad */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+  }
+}
