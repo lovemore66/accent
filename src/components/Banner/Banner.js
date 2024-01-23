@@ -5,7 +5,7 @@ const Banner = ({ title, text, children, bannerImage}) => {
     return (
         <div className="banner">
             <div className='banner-content'>
-                <img src={bannerImage} />
+                <img src={bannerImage} alt='jose banner'/>
                 <section className="banner-section">
                     <h1>{title}</h1>
                     <p>{text}</p>

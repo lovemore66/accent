@@ -7,49 +7,16 @@ import Footer from './components/Footer/Footer';
 import Button from './components/Button/Button';
 import { fetchData } from './utils/api';
 import Card from './components/Card/Card';
-import Blog from './components/Blog/Blog';
 import Spacebar from './components/Spacebar/Spacebar';
 import uxIcon from './assets/icons/ux.svg';
 import webIcon from './assets/icons/web.svg';
 import appIcon from './assets/icons/app.svg';
 import blockchainIcon from './assets/icons/blockchain.svg';
-import dragon from './assets/images/dragon.jpeg';
-import olympian from './assets/images/olympian.jpeg';
-import skhokho from './assets/images/skhokho.jpeg';
 import confidence from './assets/images/confidence.jpeg';
 import './App.css';
 import Carousel from './components/Carousel/Carousel';
 const App = () => {
-  const [data, setData] = useState([]);
-  const items = [
-    { title: 'Item 67892397', image: olympian },
-    { title: 'Item 67892397', image: './assets/images/dragon.jpeg' },
-    { title: 'Item 67892397', image: './assets/images/dragon.jpeg' },
-    { title: 'Item 67892397', image: './assets/images/dragon.jpeg' },
-  ];
-
-  useEffect(() => {
-    let isMounted = true;
-
-    const fetchDataFromAPI = async () => {
-      try {
-        const result = await fetchData();
-        if (isMounted && result) {
-          setData(result);
-          console.log('Data in State:', result);
-        }
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchDataFromAPI();
-
-    return () => {
-      isMounted = false;
-    };
-  }, []);
-
+  
   const NavigateToProjocts = () => {
     alert('No projects exist!');
   };
@@ -98,7 +65,7 @@ const App = () => {
         <Spacebar title='Case studies' spaceClass="primary" />
       </div>
       <div className='case-studies'>
-      <Carousel items={data} />
+      <Carousel />
       </div>
       <div className='brands-heading'>
         <Spacebar title='You’ll be in good company' spaceClass="primary" />
